@@ -1,0 +1,3 @@
+~/Desktop/SAM/SAM-S_WORKSPACE/ex02.sh
+~/Desktop/SAM/SAM-S_WORKSPACE/ex03.sh
+~/Desktop/SAM/SAM-S_WORKSPACE/ex04.sh

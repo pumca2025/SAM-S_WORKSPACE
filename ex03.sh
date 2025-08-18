@@ -12,7 +12,7 @@ then
 ping -c 1w 1 "$ip" &>/dev/null
 if [ $? -eq 0 ]
 then
-echo "IP $ip is online"
+echo "IP  $ip is online"
 else
 echo "IP $ip is offline"
 fi
