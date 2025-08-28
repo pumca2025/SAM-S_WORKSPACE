@@ -35,7 +35,18 @@ def addStaff():
         'Gross_pay':sal[5],
         'Net_pay':sal[6],
     }
+    staffs.append(staff)
     print(sal)
+def show():
+    fp=open("List.txt",'w')
+    fp.write('''Emp_id \t\t Name \t Designation \t\tExp \t\t Basic \t\t DA \t\t HRA \t\t PF \t\t Tax \t\t Deduction \t Gross \t\t Net \n''')
+    fp.write("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n")
+    for i in staffs:
+        for j in i:
+            fp.write(str(str(i[j]).ljust(15)))
+        fp.write("\n")
+    print("\n\n")
+    
 def menu():
     while True:
         print('''

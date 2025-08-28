@@ -12,6 +12,7 @@ for i in range(n):
     studentRecord[sub]=mark
 total=sum(marks)
 avg=total/n
+print(studentRecord,"\n\n\n")
 print("\nResult\n")
 print("StudentName     : ",studentName)
 print("Register Number :",registerNumber)
@@ -29,6 +30,7 @@ for i in studentRecord:
     print(i.ljust(40),"\t\t",studentRecord[i],"\t\t",res)
 print("\n")
 if(f>0):
+    res="Re-Appear"
     print("You have Failed in this examination")
     print("No of Subjects passed:",n-f)
     print("No of Subjects Failed:",f)
