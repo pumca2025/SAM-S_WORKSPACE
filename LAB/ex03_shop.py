@@ -14,15 +14,17 @@ def displayItems():
         price[a-1]*b
         ])
     return([a,b])
-while True:
+def addItems():
+    global totalBill,totalQuantity
     orderlist=displayItems()
-    totalQuantity+=orderlist[1]
+    totalQuantity=totalQuantity+orderlist[1]
     totalBill+=(price[orderlist[0]-1]*orderlist[1])
     ch=input("Want to add item ??? (yes to continue any other key to stop)")
     if(ch.strip().lower()=="y" or ch.strip().lower()=="yes"):
-        continue
+        addItems()
     else:
-        break
+        print("Here is the invoice of your purchase")
+addItems()
 print("\n\n\nINVOICE")
 print("-----------------------------------------------------------------------------")
 print("Product Name\t\tPrice \t\t     Quantity\t\t\tTotal")
