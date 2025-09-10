@@ -1,0 +1,5 @@
+{
+  "name": "BookMyShow Clone",
+  "description": "A comprehensive frontend web application that replicates the core functionality of BookMyShow, a popular movie ticket booking platform. It features movie discovery, an interactive seat selection and booking system, and an admin panel for content management, with all data persisted in localStorage.",
+  "requestFramePermissions": []
+}
