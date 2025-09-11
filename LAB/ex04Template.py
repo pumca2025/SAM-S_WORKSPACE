@@ -19,7 +19,7 @@ models=[chatgpt,gemini,claude]
 while True:
     print("Choose the AI model")
     print("1.Chat GPT\n2.Gemini\n3.Claude")
-    a=int(input("Enter your choice (1-3) 4 to exit script"))
+    a=int(input("Enter your choice (1-3) 4 to exit script :"))
     if(a>=1 and a<=3):
         print(models[a-1].display())
     elif(a==4):
