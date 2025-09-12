@@ -3,13 +3,13 @@ import numpy as np
 def normal():
     while True:
         print('''
-1.Addition
-2.Subtraction
-3.Multiplication
-4.Division
-5.Exponential
-6.Remainder
-7.Exit
+    1.Addition
+    2.Subtraction
+    3.Multiplication
+    4.Division
+    5.Exponential
+    6.Remainder
+    7.Exit
 '''     )
         ch=int(input("What doyou want to do... :"))
         if(ch==7):
@@ -69,11 +69,11 @@ def scientific():
                 print("invalid")
 
 print("Calculator")
-print(""""
+print("""
 1.Normal Mode
 2.Scientific Mode
 """)
-ch=int(input("In which mode do you want to open??"))
+ch=int(input("In which mode do you want to open (1/2)??"))
 if(ch==1):
     normal()
 elif(ch==2):
