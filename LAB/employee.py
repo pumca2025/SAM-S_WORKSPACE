@@ -35,7 +35,17 @@ def addStaff():
         'Gross_pay':sal[5],
         'Net_pay':sal[6],
     }
-    print(sal)
+    staffs.append(staff)
+    print("Employee added success fully............ ")
+def show():
+    fp=open("List.txt",'a')
+    for i in staffs:
+        for j in i:
+            fp.write(str(str(i[j]).ljust(15)))
+        fp.write("\n")
+    print("The details are successfully saved on the file employee.txt \n\n")
+    
+    
 def menu():
     while True:
         print('''
