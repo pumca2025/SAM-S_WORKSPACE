@@ -37,15 +37,26 @@ def addStaff():
     }
     staffs.append(staff)
     print("Employee added success fully............ ")
-def show():
     fp=open("List.txt",'a')
     for i in staffs:
         for j in i:
             fp.write(str(str(i[j]).ljust(15)))
         fp.write("\n")
     print("The details are successfully saved on the file employee.txt \n\n")
-    
-    
+
+def show():
+    try:
+        with open("List.txt", 'r') as fp:
+            content = fp.read()
+            if content.strip() == "":
+                print("File is empty... No employee details found.\n")
+            else:
+                print("\n========= Employee Details from File =========\n")
+                print(content)
+                print("==============================================\n")
+    except FileNotFoundError:
+        print("List.txt file not found. Please save data first using 'Show details' option.\n")
+
 def menu():
     while True:
         print('''
