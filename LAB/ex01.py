@@ -12,8 +12,8 @@ for i in range(n):
     studentRecord[sub]=mark
 total=sum(marks)
 avg=total/n
-print(studentRecord,"\n\n\n")
-print("\nResult\n")
+print("\n")
+print("Result\n")
 print("StudentName     : ",studentName)
 print("Register Number :",registerNumber)
 print("-------------------------------------------------------------------------------------------------------")

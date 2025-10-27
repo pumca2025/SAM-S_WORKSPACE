@@ -1,0 +1,11 @@
+import numpy as np
+a=np.random.randint(1,100,size=(3,3))
+b=np.random.randint(1,100,size=(3,3))
+print("Adddition of two matrices \n",a+b)
+print("Multiplication of the matrices \n",a*b)
+print("Sum of Matrix 1 :",a.sum())
+print("Mean of the Matrix 1 :",a.mean())
+print("Standard Devistion of the Matrix 1 :",a.std())
+print("Sum of the Matrix 2 :",b.sum())
+print("Mean of the Matrix 2 :",b.mean())
+print("Standard Deviation of the Matrix 2 :",b.std())
