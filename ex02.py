@@ -40,10 +40,10 @@ class Stack:
 def main():
     stackSize=int(input("Enter the size of the stack :"))
     stack=Stack(stackSize)
+    print("Menu")
+    print("1.Push\n2.Pop\n3.Peek\n4.Size\n5.isEmpty\n6.isFull\n7.Display\n8.Exit")
     while True:
         print("\n\n")
-        print("Enter the Operation")
-        print("1.Push\n2.Pop\n3.Peek\n4.Size\n5.isEmpty\n6.isFull\n7.Display\n8.Exit")
         ch=int(input("Enter your choice :"))
         if(ch==1):
             x=input("Enter the element to be added :")
