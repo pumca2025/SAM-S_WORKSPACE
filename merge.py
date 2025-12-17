@@ -1,0 +1,7 @@
+import cv2
+img1=cv2.imread("rect1.jpg")
+img2=cv2.imread("rect2.jpg")
+img1=cv2.resize(img1,(400,300))
+img2=cv2.resize(img2,(400,300))
+res=cv2.addWeighted(img1,0.5,img2,0.5,0)
+cv2.imshow("Merged",res)
