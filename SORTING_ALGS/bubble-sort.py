@@ -9,7 +9,7 @@ def bubble_sort(arr):
                 swap+=1
         if(swap==0):
             break
-    print(arr)        
+    print("Sorted Array :",arr)        
 arr=input("Enter Elements Seperated by space :").split()
 new_arr=[int(d) for d in arr]
 bubble_sort(new_arr)
