@@ -10,6 +10,6 @@ def bubble_sort(arr):
         if(swap==0):
             break
     print(arr)        
-arr=input("Enter Elements Seperated by spaces :").split()
+arr=input("Enter Elements Seperated by space :").split()
 new_arr=[int(d) for d in arr]
 bubble_sort(new_arr)
