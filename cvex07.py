@@ -1,0 +1,13 @@
+import cv2
+img=cv2.imread("sudokuimage.jpg",cv2.IMREAD_GRAYSCALE)
+sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=3)
+sobely=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=3)
+scharrx=cv2.Scharr(img,cv2.CV_64F,1,0)
+scharry=cv2.Scharr(img,cv2.CV_64F,0,1)
+cv2.imshow("ORIGINAL",img)
+cv2.imshow('Sobel X',sobelx)
+cv2.imshow('Sobel Y',sobely)
+cv2.imshow("Schaar X",scharrx)
+cv2.imshow("Schaar Y",scharry)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
