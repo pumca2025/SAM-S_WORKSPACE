@@ -1,0 +1,17 @@
+import cv2
+import matplotlib.pyplot as plt
+img=cv2.imread('img.jpg')
+g_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+blue=cv2.calcHist([img],[0],None,[256],[0,256])
+green=cv2.calcHist([img],[1],None,[256],[0,256])
+red=cv2.calcHist([img],[2],None,[256],[0,256])
+cv2.imshow("Greymage",g_img)
+plt.hist(blue,color='blue')
+plt.hist(red,color='red')
+plt.hist(green,color='green')
+cv2.imwrite('D:/img.jpg',img)
+plt.show()
+plt.hist(g_img.ravel())
+plt.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
