@@ -1,5 +1,5 @@
 import cv2
-img=cv2.imread("sudokuimage.jpg",cv2.IMREAD_GRAYSCALE)
+img=cv2.imread("sud.png",cv2.IMREAD_GRAYSCALE)
 sobelx=cv2.Sobel(img,cv2.CV_64F,1,0,ksize=3)
 sobely=cv2.Sobel(img,cv2.CV_64F,0,1,ksize=3)
 scharrx=cv2.Scharr(img,cv2.CV_64F,1,0)

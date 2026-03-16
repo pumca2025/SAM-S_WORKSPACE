@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import ndimage
 # Read image
-img = cv2.imread("img.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("medimg.jpg", cv2.IMREAD_GRAYSCALE)
 if img is None:
     print("Image not found")
     exit()

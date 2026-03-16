@@ -1,8 +1,8 @@
 import cv2, numpy as np
-matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from scipy import ndimage
-org=cv2.imread("img.png")
-img = cv2.imread("img.jpg", 0)
+org=cv2.imread("medimg.jpg")
+img = cv2.imread("medimg.jpg", 0)
 noise = img.astype(np.float32) + 20*np.random.randn(*img.shape)
 denoise = ndimage.median_filter(noise, 3)
 harris = cv2.cornerHarris(np.float32(denoise), 2, 3, 0.04)

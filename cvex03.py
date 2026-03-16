@@ -1,8 +1,9 @@
 import cv2
-img=cv2.imread('img.jpg')
-r=cv2.resize(img,(200,150))
-rot=cv2.getRotationMatrix2D((img.shape[1]/2,img.shape[0]/2),90,1)
+img=cv2.imread('sat.jpg')
+r=cv2.resize(img,(500,350))
+rot=cv2.getRotationMatrix2D((img.shape[1]/2,img.shape[0]/2),30,1)
 rotated=cv2.warpAffine(img,rot,(img.shape[1],img.shape[0]))
+cv2.imshow('Original',img)
 cv2.imshow('Risized',r)
 cv2.imshow('rotated',rotated)
 cv2.waitKey(0)
