@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2</title>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 90vh;
+            margin: auto;
+            max-width: 90%;
+        }
+
+        .left {
+            max-width: 720px;
+            flex: 1;
+        }
+
+        .right {
+            flex: 0 0 340px;
+        }
+
+        .right img {
+            border: 1px solid;
+            border-radius: 30px;
+        }
+
+        * {
+            /* border:1px solid; */
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .card-container {
+            border: 1px solid;
+            width: 300px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-container h3{
+            font-size: 32px;
+        }
+        .card-container:hover{
+            cursor: pointer;
+            background-color: black;
+            color: #fff;
+        }
+        .skill-cards{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 5;
+            
+            margin-left: 20px;
+            
+        }
+    </style>
+   
+</head>
+
+<body>
+    <nav>
+        <div class="logo" style="font-size: 40px;">
+            Portfolio
+        </div>
+        <ul>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="left">
+            <h1>Hello I am Sam</h1>
+            <p style="font-size: 30px; line-height: 1.5;">A passionate Developer with adequate experience in working
+                with Full stack tools like React Node and Python. I am eager to work in a collaborative environment
+                contributing to the project and keep improving my skills</p>
+            <br><br>
+            <div class="links">
+                <ul style="display: flex;gap: 200px;list-style: none; margin-left: -40px; font-size: 24px; ">
+                    <li>Github</li>
+                    <li>Linked In</li>
+                    <li>Mail</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./profile.jfif" alt="" style="width: 340px;">
+        </div>
+    </div>
+
+    <div class="skills" style="width: 90%; margin: auto;">
+        <h1>Skills</h1>
+        <div class="skill-cards" id="skill-cards">
+            
+        </div>
+    </div>
+
+
+    <script>
+    
+        let skills=['React',"Node","Python","MongoDB","MySql","Docker","HTML","CSS","JS","Git/Github"]
+
+        document.getElementById("skill-cards").innerHTML=
+        skills.map(skill=>`<div class="card-container" style="margin:2px">
+                <h3>${skill}</h3>
+            </div>`).join("")
+    
+    </script>
+
+</body>
+
+</html>
